@@ -2,6 +2,7 @@ import React from "react";
 const DisplayInfo = (props) => {
 
     // template + logic js
+    // eslint-disable-next-line react/prop-types
     const { listUsers } = props
 
 
