@@ -65,3 +65,27 @@ button {
 .item {
   margin-top: 30px;
 }
+
+.item-box {
+  border: 2px solid pink;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 5px;
+}
+
+.item-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.item .col-3 {
+  padding: 10px;
+}

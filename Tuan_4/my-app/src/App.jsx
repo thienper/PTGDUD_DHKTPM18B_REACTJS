@@ -27,15 +27,15 @@ function App() {
             <Emma />
           </div>
           <div className="col-12"><Info /></div>
-          <div className="col-12 item"><ul>
-            <div className="row  g-0">
+          <div className="col-12 item">
+            <ul className="row g-0">
               {arr.map((e) => (
-                <div key={e.id} className="col-3">
+                <li key={e.id} className="col-sm-6 col-md-4 col-lg-3">
                   <Item id={e.id} name={e.title} img={e.image} />
-                </div>
+                </li>
               ))}
-            </div>
-          </ul></div>
+            </ul>
+          </div>
 
 
         </div>
