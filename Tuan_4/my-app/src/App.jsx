@@ -5,20 +5,25 @@ import Item from "./assets/Item";
 import Emma from './components/Emma';
 import Info from "./components/Info";
 
+
 function App() {
   var url = "https://67c83bb60acf98d070858496.mockapi.io/myreactapp/myAppReact";
   var [arr, setArr] = useState([]);
 
+
+
   useEffect(() => {
-    // eslint-disable-next-line no-unused-vars
-    var fn = fetch(url).then((r) => r.json())
-      .then(
-        (data) => {
-          setArr(data)
-        }
-      )
-  }, []
-  )
+    fetch(url)
+      .then((r) => r.json())
+      .then((data) => {
+        setArr(data);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
+  }, []);
+
+  console.log(arr);
   return (
     <>
       <div className='container-fluid'>
